@@ -6,6 +6,8 @@
 
 This project is a dummy role that simply echoes back a variable you give it.  The purpose for this is to easily demonstrate workflow concepts without building a working playbook or role to do so.
 
+Within Ansible Tower, you can launch the playbook found here:  https://github.com/GoKEV/GoKEV-dummy-playbook.git
+
 ## Here's an example of how you could launch this role:
 <pre>
 ansible-playbook GoKEV-dummy-role.yml
