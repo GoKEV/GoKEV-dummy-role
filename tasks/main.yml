@@ -5,3 +5,7 @@
   debug:
     var: dummy_message
 
+- fail:
+    msg: "Failing because {{ dummy_fail }} told me to"
+  when: dummy_fail is undefined
+
