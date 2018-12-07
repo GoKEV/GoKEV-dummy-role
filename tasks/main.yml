@@ -6,6 +6,6 @@
     var: dummy_message
 
 - fail:
-    msg: "Failing because {{ dummy_fail }} told me to"
+    msg: "Failed - {{ dummy_fail }}"
   when: dummy_fail is defined
 
