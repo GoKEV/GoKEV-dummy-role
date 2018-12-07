@@ -7,5 +7,5 @@
 
 - fail:
     msg: "Failing because {{ dummy_fail }} told me to"
-  when: dummy_fail is undefined
+  when: dummy_fail is defined
 
