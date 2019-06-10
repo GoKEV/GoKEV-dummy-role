@@ -8,7 +8,7 @@
 
 - name: Display ENVAR
   debug:
-    msg: "EnvVar {{ lookup('env','dummy_message') }}
+    msg: "EnvVar {{ lookup('env','dummy_message') }}"
   when: dummy_fail is undefined
 
 - fail:
