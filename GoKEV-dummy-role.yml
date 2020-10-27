@@ -1,6 +1,6 @@
 ---
 - name: Run this dummy role
-  hosts: localhost
+  hosts: {{ input_hosts_var | default ('localhost') }}
   gather_facts: no
 
   vars:
