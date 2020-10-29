@@ -1,6 +1,6 @@
 ---
 - name: Run this dummy role
-  hosts: "{{ HOSTS | default ('localhost') }}"
+  hosts: "{{ HOSTS | default ('all') }}"
   gather_facts: no
 
   vars:
