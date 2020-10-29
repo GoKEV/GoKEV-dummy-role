@@ -1,6 +1,10 @@
 ---
 # tasks file for GoKEV-dummy-role
 
+- name: Confirm running server
+  debug:
+    msg: "Running on {{ inventory_hostname }}"
+
 - name: Display Message
   debug:
     msg: "Message {{ dummy_message }}"
