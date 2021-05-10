@@ -7,7 +7,7 @@
 
 - name: Display Message
   debug:
-    msg: "Message {{ dummy_message }}"
+    msg: "{{ dummy_message }}"
   when: dummy_fail is undefined
 
 #- name: Display ENVAR
