@@ -1,0 +1,11 @@
+---
+- name: What is my IP address
+  hosts: "{{ HOSTS | default ('all') }}"
+
+  tasks:
+  - shell:
+      cmd: curl gokev.com/myip
+    register: myip
+    
+  - debug:
+    msg: "My IP address is {{ myip }}"
